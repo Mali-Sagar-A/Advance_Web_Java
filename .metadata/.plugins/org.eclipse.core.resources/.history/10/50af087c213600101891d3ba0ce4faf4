@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<hibernate-configuration>
+	<session-factory>
+	<porperty name="hbm2ddl.auto">Update</porperty>
+	<porperty name="connection.username">root</porperty>
+	<porperty name="connection.password">root</porperty>
+	<porperty name="connection.url">jdbc:mysql://localhost:3306/wbj</porperty>
+	<porperty name="driver-class">com.mysql.cj.jdbc.Driver</porperty>
+	<porperty name="show-sql">true</porperty>
+	<porperty name="dialect">org.hibernate.dialect.MySqlDialect</porperty>	
+	</session-factory>
+	</hibernate-configuration>

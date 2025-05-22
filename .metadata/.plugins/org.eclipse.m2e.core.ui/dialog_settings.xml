@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="com.app"/>
+			<item value="com.app.jsp.tagDemo.i18n.resources"/>
+			<item value="com.app.jsp.tagdemo.i18nDemo"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="HibernateWeb"/>
+			<item value="HibernateDemo"/>
+			<item value="Todolist"/>
+			<item value="JSTLDemo"/>
+			<item value="JSPForward"/>
+			<item value="EmployeeCURD"/>
+			<item value="EmployeeCRUD"/>
+			<item value=" EmployeeCRUD"/>
+			<item value="CustomerJSTL"/>
+			<item value="StudentJsp"/>
+			<item value="HBFJsp"/>
+			<item value="DivideJsp"/>
+			<item value="tagDemo"/>
+			<item value="i18nDemo"/>
+			<item value="JspDemo2"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\cdac\WebJava\JspDemo3\src\main\webapp\table.jsp"/>
+			<item value="D:\cdac\WebJava\SessionLogin\src\main\java\com\app\loginServlet.java"/>
+			<item value="D:\cdac\WebJava\CookieDemo\src\main\java\com\app\MyServlet.java"/>
+			<item value="D:\cdac\WebJava\FilterDemo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

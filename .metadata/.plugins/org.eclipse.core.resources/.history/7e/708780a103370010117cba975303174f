@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="deleteBook.jsp">
+<h2>Book ID:<input type="text" name="txtid"></h2>
+<input type="submit" value="Submit">
+</form>
+<%
+String bid= request.getParameter("txtid");
+
+if( bid!=null && !bid.trim().isEmpty())
+{
+	int id= Integer.parseInt(bid);
+	BookDAO bd = new BookDAO();
+     bd.deleteBook(id);
+%>
+<h1>Book Deleted</h1>
+<%
+}
+else
+{
+%>
+<h1>Book not Deleted</h1>
+<%
+}
+%>
+</body>
+</html>

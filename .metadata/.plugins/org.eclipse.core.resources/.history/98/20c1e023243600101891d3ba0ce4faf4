@@ -1,0 +1,22 @@
+package com.app.entity;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class App {
+	
+	public static void main(String[] args) {
+		//1.Create SessionFactory
+		
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
+		
+		
+		//2.Create Session 
+		
+		Session session=factory.openSession();
+		
+		//3.Begin T
+	}
+
+}

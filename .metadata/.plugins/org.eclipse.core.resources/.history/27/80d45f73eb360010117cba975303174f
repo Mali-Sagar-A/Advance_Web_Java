@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="com.app.entity.Student"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:useBean id="s" class="com.app.entity.Student"></jsp:useBean>
+<!-- Student s=new Student(); -->
+
+<jsp:useBean id="sd" class="com.app.dao.StudentDAO"></jsp:useBean>
+<h2>Student ID:<input type="text" name="txtid"></h2>
+<input type="submit" value="Submit">
+<%
+	String idParam = request.getParameter("txtid");
+	if (idParam != null && !idParam.trim().isEmpty()) {
+    int id = Integer.parseInt(idParam);
+    Student s1 = sd.getStudent(id);
+    // display s1
+	} else {
+    out.println("Student ID not provided or invalid.");
+	}
+
+
+%>
+
+
+
+<h1>Student Details:</h1>
+<br><br>
+<h2>Stud-Id:<jsp:getProperty property="id" name="s"/></h2>
+<h2>First Name:<jsp:getProperty property="firstName" name="s"/></h2>
+<h2>Last Name:<jsp:getProperty property="lastName" name="s"/></h2>
+<h2>Email:<jsp:getProperty property="email" name="s"/></h2>
+
+
+</body>
+</html>

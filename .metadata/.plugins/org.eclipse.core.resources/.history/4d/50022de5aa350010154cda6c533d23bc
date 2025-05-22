@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.util.*" session="true"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 1.Create a HTML Form -->
+<form action="todoDemo.jsp">
+Add New Item:<input type="text" name="theItem">
+<input type="submit" value="SUBMIT">
+
+<!-- 2. Add a New Item To do List -->
+
+</form>
+</body>
+</html>

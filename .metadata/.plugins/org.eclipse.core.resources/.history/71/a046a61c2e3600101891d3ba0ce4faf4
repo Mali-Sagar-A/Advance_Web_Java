@@ -1,0 +1,12 @@
+package com.app.dao;
+
+import com.app.entity.Student;
+
+public class StudentDAO {
+	
+	public static void saveStudent(Student s)
+	{
+		
+	}
+
+}

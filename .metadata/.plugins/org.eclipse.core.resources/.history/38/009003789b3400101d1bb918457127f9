@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	int no=Integer.parseInt(request.getParameter("textNum"));
+	for(int i=1;i<=10;i++)
+	{
+%>
+<table>
+
+<tr><td><%=(no*i) %></td></tr>
+
+<%
+	}
+%>
+
+
+</body>
+</html>

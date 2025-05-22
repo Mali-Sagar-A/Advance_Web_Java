@@ -1,0 +1,65 @@
+package com.app.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.app.entity.Student;
+
+public class StudentDAO {
+	
+	public static int saveStudent(Student s)
+	{
+		SessionFactory  factory =null;
+		Session session =null;
+		try {
+			factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
+			session = factory.openSession();
+			
+			session.beginTransaction();
+			
+		int id=(int) session.save(s);	
+			//session.persist(s);
+			
+			session.getTransaction().commit();
+			
+			return id;
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		finally {
+			session.close();
+			factory.close();
+		}
+		return 0;
+	}
+	
+	public static Student getStudent(int id)
+	{
+		SessionFactory  factory =null;
+		Session session =null;
+		try {
+			factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
+			session = factory.openSession();
+			
+			session.beginTransaction();
+			
+		//int id=(int) session.save(s);	
+			//session.persist(s);
+			Student student= session.get(Student.class, id)
+			session.getTransaction().commit();
+			
+			return id;
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		finally {
+			session.close();
+			factory.close();
+		}
+		return 0;
+	}
+
+}

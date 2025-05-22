@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+body {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  
+  
+}
+
+
+h1 {
+  color: #343a40;
+}
+
+
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}

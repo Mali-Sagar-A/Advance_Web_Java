@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:useBean id="b" class="com.app.entity.Book"></jsp:useBean>
+<!-- Student s=new Student(); -->
+<jsp:setProperty property="*" name="s"/>
+<jsp:useBean id="bd" class="com.app.dao.BookDAO"></jsp:useBean>
+<form action="viewBook.jsp">
+<h2>Book ID:<input type="text" name="txtid"></h2>
+<input type="submit" value="Submit">
+</form>
+
+<%
+	String bid= request.getParameter("txtid");
+	
+	if( bid!=null && !bid.trim().isEmpty())
+	{
+		int id= Integer.parseInt(bid);
+		bd.getBook(id);
+	}
+	else
+	{
+%>
+<h2>Book Id is Not Provided Or Invalid</h2>
+<% }%>		
+		
+	
+	
+
+
+%>
+
+<h1>Book Details:</h1>
+<br><br>
+<h2>Book-Id:<jsp:getProperty property="id" name="b"/></h2>
+<h2>Book Titel:<jsp:getProperty property="titel" name="b"/></h2>
+<h2>Book Aurthor:<jsp:getProperty property="aurthor" name="b"/></h2>
+<h2>Book Publisher:<jsp:getProperty property="publisher" name="b"/></h2>
+<h2>Book Price:<jsp:getProperty property="price" name="b"/></h2>
+</body>
+</html>

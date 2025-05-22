@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.util.*"%>
+    <%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<c:set var="num" value="100"></c:set>
+Num=<c:out value="${num}"></c:out>
+<hr>
+<br>
+<c:set var="date" value="<%= new Date() %>"></c:set>
+Time on Server :${date}
+<br>
+<hr>
+<c:set var="num1" value="100"/>
+<c:set var="num2" value="200"/>
+Sum=${num1+num2} 
+
+
+
+</body>
+</html>

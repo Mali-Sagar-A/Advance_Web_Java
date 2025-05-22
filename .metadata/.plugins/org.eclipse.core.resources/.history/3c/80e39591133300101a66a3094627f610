@@ -1,0 +1,15 @@
+package com.app.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class StudentDAO {
+	
+	public static Connection getConnection() throws ClassNotFoundException {
+		Connection con= null;
+		
+		Class.forName("com.mysql.cj.jdbc.driver");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/WBJ","root");
+	}
+
+}

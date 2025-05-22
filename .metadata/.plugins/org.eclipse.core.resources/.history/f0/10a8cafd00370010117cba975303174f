@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:useBean id="b" class="com.app.entity.Book"></jsp:useBean>
+<!-- Student s=new Student(); -->
+<jsp:setProperty property="*" name="b"/>
+<jsp:useBean id="bd" class="com.app.dao.BookDAO"></jsp:useBean>
+
+<%
+ 	int id=bd.updateBook(b,b.getId());
+
+	if(id>0)
+	{
+%>
+
+<h1>Book Added Successfully....!</h1>
+
+<%
+	}
+	else
+	{
+%>
+<h1>Book Not Added...</h1>
+<% } %>
+
+<a href="index.jsp">Back</a>
+</body>
+</html>

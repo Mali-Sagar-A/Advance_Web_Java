@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, rgb(231,139,139),rgb(245,204,129),rgb(248,125,116),rgb(241,117,204),rgb(236,201,103),rgb(238,103,182),violet);
+  display: flex;
+  justify-content: center;
+  height:100vh;
+  
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn-primary {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+}

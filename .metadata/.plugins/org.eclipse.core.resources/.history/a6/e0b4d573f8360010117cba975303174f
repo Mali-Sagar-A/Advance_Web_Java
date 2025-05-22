@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="com.app.entity.Book,com.app.dao.BookDAO"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="viewBook.jsp">
+<h2>Book ID:<input type="text" name="txtid"></h2>
+<input type="submit" value="Submit">
+</form>
+
+<%
+	String bid= request.getParameter("txtid");
+	
+	if( bid!=null && !bid.trim().isEmpty())
+	{
+		int id= Integer.parseInt(bid);
+		BookDAO bd = new BookDAO();
+        Book b = bd.getBook(id);
+
+%>	
+
+<h1>Book Details:</h1>
+<br><br>
+<h2>Book-Id:<%= b.getId() %></h2>
+<h2>Book Titel:</h2>
+<h2>Book Aurthor:</h2>
+<h2>Book Publisher:</h2>
+<h2>Book Price:</h2>	
+		
+<% 		
+	}
+	else
+	{
+%>
+<h2>Book Id is Not Provided Or Invalid</h2>
+<% }%>		
+		
+	
+	
+
+
+
+
+
+</body>
+</html>
